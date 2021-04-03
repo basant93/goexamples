@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"github.com/basant93/gobyexamples/cli/buildInstall/hello"
 )
 
 //go help run
@@ -11,5 +10,5 @@ import (
 
 func main() {
 	fmt.Println("Hello")
-	hello.SayHello()
+
 }
