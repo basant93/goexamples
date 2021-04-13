@@ -8,15 +8,13 @@ import (
 
 func main() {
 
-	movie := reflectauxiliary.Movie{}
-	movie.Name = "Five Feet Apart"
-	movie.Rating = 8.0
+	movie := reflectauxiliary.NewMovie("Five Feet Apart", 8.0)
+	fmt.Println(movie.GetMovieName())
+	fmt.Println(movie.GetMovieRating())
 
-	fmt.Println(movie.Name)
-	fmt.Println(movie.Rating)
-	movie.Name = "Schilder's List"
-	movie.Rating = 9.9
-	fmt.Println(movie.Name)
-	fmt.Println(movie.Rating)
+	movie.SetMovieName("Schinder's list")
+	movie.SetMovieRating(9)
 
+	fmt.Println(movie.GetMovieName())
+	fmt.Println(movie.GetMovieRating())
 }
