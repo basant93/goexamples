@@ -11,6 +11,10 @@ type Home struct {
 	Address Address
 }
 
+func NewHome() *Home {
+	return &Home{}
+}
+
 func (h *Home) SetHomeDetails(size float32, addr Address) {
 	h.Address = addr
 	h.Size = size
