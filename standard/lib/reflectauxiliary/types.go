@@ -31,3 +31,10 @@ func (m *Movie) SetMovieName(name string) {
 func (m *Movie) SetMovieRating(rating float32) {
 	m.Rating = rating
 }
+
+type Entertainment interface {
+	GetMovieName() string
+	GetMovieRating() float32
+	SetMovieName(name string)
+	SetMovieRating(rating float32)
+}
