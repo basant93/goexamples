@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/basant93/goexamples/standard/lib/types"
+	"github.com/basant93/goexamples/standard/lib/gotypes/type/types"
 )
 
 func main() {
