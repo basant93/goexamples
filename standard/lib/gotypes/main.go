@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/basant93/goexamples/standard/lib/gotypes/type/types"
+	"github.com/basant93/goexamples/gtype"
 )
 
 func main() {
@@ -10,7 +10,7 @@ func main() {
 	fmt.Printf("person firstname: %s \n", per.FirstName)
 	fmt.Println(per.details())
 
-	home := types.Home{}
+	home := gtype.Home{}
 	home.SetHomeDetails(100, "India Pincode - 411000")
 	fmt.Println(home.GetHomeDetails())
 
